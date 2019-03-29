@@ -164,7 +164,7 @@ func (m *AlertMSG) Send(msg string) {
 	} else {
 		log.Printf("wechat access token is not timeout")
 	}
-	log.Printf("start to send alert massage to wechat")
+	log.Printf("start to send alert message to wechat")
 
 	api := fmt.Sprintf("https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token=%s", m.AccessToken)
 	resp, err := http.Post(api, "application/x-www-form-urlencoded", strings.NewReader(msg))
