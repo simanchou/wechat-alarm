@@ -31,9 +31,9 @@ func init() {
 		log.Fatalln("load conf file fail, check it again")
 	}
 
-	conf.CorpID = cfg.Section("webchat").Key("corpid").String()
-	conf.CorpSecret = cfg.Section("webchat").Key("corpsecret").String()
-	conf.AgentID = cfg.Section("webchat").Key("agentid").String()
+	conf.CorpID = cfg.Section("wechat").Key("corpid").String()
+	conf.CorpSecret = cfg.Section("wechat").Key("corpsecret").String()
+	conf.AgentID = cfg.Section("wechat").Key("agentid").String()
 	conf.Level = map[string]string{
 		"1": cfg.Section("level").Key("1").String(),
 		"2": cfg.Section("level").Key("2").String(),

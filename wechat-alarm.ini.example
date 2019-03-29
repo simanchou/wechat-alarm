@@ -1,0 +1,11 @@
+# your wechat info
+[wechat]
+corpid = 123456789
+agentid = 123456789
+corpsecret = 123456789
+
+# alarm level for send to some one
+[level]
+1 = siman|dyson|john|leon
+2 = siman|dyson|john
+3 = siman|dyson
